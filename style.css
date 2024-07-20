@@ -1,0 +1,71 @@
+body {
+    margin: 100px;
+    padding: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.main-container {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    border-radius: 55PX;
+    width: 300px;
+    height: 110px;
+    background-color: rgb(58, 58, 58);
+}
+
+@keyframes right {
+    from {
+        left: 5px;
+        background-color: gray;
+    }
+
+    to {
+        left: 195px;
+        background-color: orange;
+    }
+}
+
+@keyframes left {
+    from {
+        left: 195px;
+        background-color: orange;
+    }
+
+    to {
+        left: 5px;
+        background-color: gray;
+    }
+}
+
+.animate-circle {
+    animation: right 0.3s ease-out forwards;
+}
+
+.animate-left {
+    animation: left 0.3s ease-out forwards;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;  
+}
+
+
+
+
